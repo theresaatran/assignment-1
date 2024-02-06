@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url('../assets/starwars-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header {
+	text-align: center;
+	padding: 50px;
+}
+.logo {
+	width: 200px;
+	height: auto;
+	display: block; 
+    margin: 0 auto; 
+}
+
+.container {
+	display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px;
+}
+.category {
+	border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    width: 300px;
+	height: 350px;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.category:hover {
+	background-color: #333;
+}
+
+.category h2 {
+	margin-top: 0;
+}
+
+.category p {
+	margin-bottom: 10px;
+}
+
+.category a {
+	color: yellow;
+	text-decoration: none;
+}
+
+.category a:hover {
+	text-decoration: underline;
+}
+
+.films-list {
+	margin-top: 20px;
+}
+.film {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.film h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.film p {
+	margin-bottom: 5px;
+}
+hr {
+	border: none;
+	border-top: 1px solid #ddd;
+	margin: 20px 0;
+}
