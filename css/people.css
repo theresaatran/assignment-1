@@ -10,7 +10,7 @@
 .header h1,
 .header a {
     margin-bottom: 10px;
-	color: yellow;
+    text-decoration: none;
 }
 
 .container {
@@ -20,6 +20,7 @@
 }
 h1 {
     text-align: center;
+    color: yellow;
 }
 
 .people-container {
@@ -39,8 +40,8 @@ h1 {
     color: white;
     transition: background-color 0.3s ease;
     margin: 10px;
-    width: 300px;
-	height: 350px;
+    width: 370px;
+	height: 450px;
     max-width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -53,12 +54,12 @@ h1 {
 .people-box h2 {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .people-box p {
     font-size: 16px;
-    margin-bottom: 3px;
+    padding: 5px;
 }
 
 .people-img {
