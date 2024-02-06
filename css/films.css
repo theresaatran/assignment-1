@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+	padding: 40px;
+}
+
+.header h1,
+.header a {
+    margin-bottom: 10px;
+	color: yellow;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+}
+
+.films-container {
+	display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.film-box {
+	border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    width: 300px;
+	height: 350px;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.film-box:hover {
+	background-color: #333;
+}
+
+
+.film-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.film-box p {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.film-cover {
+    max-width: 50%;
+    height: auto; 
+}
