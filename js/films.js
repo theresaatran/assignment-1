@@ -17,7 +17,7 @@ const renderFilms = (films) => {
         const title = film.title;
         const director = film.director;
         const releaseDate = film.release_date;
-		const imageUrl = `../assets/${index + 1}.${title.toLowerCase().replace(/ /g, '_')}.jpg`;
+		const imageUrl = `../assets/films/${index + 1}.${title.toLowerCase().replace(/ /g, '_')}.jpg`;
 
         const content = `
             <h2>${title}</h2>

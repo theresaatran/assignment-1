@@ -64,4 +64,5 @@ h1 {
 .film-cover {
     max-width: 50%;
     height: auto; 
+    padding-bottom: 15px;
 }
