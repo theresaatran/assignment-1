@@ -30,6 +30,7 @@
 	height: 350px;
     max-width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	
 }
 
 .category:hover {
@@ -37,11 +38,12 @@
 }
 
 .category h2 {
-	margin-top: 0;
+	margin-top: 20px;
 }
 
 .category p {
 	margin-bottom: 10px;
+	padding: 20px;
 }
 
 .category a {
