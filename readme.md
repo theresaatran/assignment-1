@@ -6,4 +6,5 @@ API and handling responses. For this purpose, i have made a Star Wars website wi
 - people
 - planets
 - vehicles
+
 Each category will take you to a separate page with 6 boxes of each category. This includes the title, image and additional information
