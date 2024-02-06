@@ -25,6 +25,7 @@ const renderVehicles = async () => {
             const length = vehicle.length;
 			const imageUrl = `../assets/vehicles/${name.toLowerCase().replace(/ /g, '_')}.jpg`;
 
+
             const content = `
                 <h2>${name}</h2>
 				<img src="${imageUrl}" alt="${name} Image" class="vehicles-img">
