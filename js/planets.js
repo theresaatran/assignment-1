@@ -25,6 +25,8 @@ const renderPlanets = async () => {
             const gravity = planet.gravity;
 			const imageUrl = `../assets/planets/${name.toLowerCase().replace(/ /g, '_')}.jpg`;
 
+            console.log('Rendering planet:', planet);
+
             const content = `
                 <h2>${name}</h2>
 				<img src="${imageUrl}" alt="${name} Image" class="planets-img">

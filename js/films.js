@@ -4,6 +4,7 @@ const fetchAndDisplayFilms = async () => {
         const data = await response.json();
         const films = data.results.slice(0, 6);
         renderFilms(films);
+        console.log('Rendering Films:', films);
     } catch (error) {
         console.error('Error fetching films:', error);
     }

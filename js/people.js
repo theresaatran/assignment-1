@@ -1,3 +1,4 @@
+/*
 const fetchPeople = async () => {
     try {
         const response = await fetch('https://swapi.dev/api/people/');
@@ -25,6 +26,8 @@ const renderPeople = async () => {
 			const eyeColor = person.eye_color
 			const imageUrl = `../assets/people/${name.toLowerCase().replace(/ /g, '_')}.jpg`;
 
+            console.log('Rendering person:', person);
+
             const content = `
                 <h2>${name}</h2>
 				<img src="${imageUrl}" alt="${name} Image" class="people-img">
@@ -41,3 +44,43 @@ const renderPeople = async () => {
 };
 
 renderPeople();
+
+*/
+const fetchPeople = async () => {
+    try {
+        const response = await fetch('https://swapi.dev/api/people/');
+        const data = await response.json();
+        const people = data.results.slice(0, 6);
+        renderPeople(people);
+        console.log('Rendering People:', people);
+    } catch (error) {
+        console.error('Error fetching people:', error);
+    }
+};
+
+
+const renderPeople = (people) => {
+    const peopleBoxes = document.querySelectorAll('.people-box');
+    peopleBoxes.forEach((box, index) => {
+            const person = people[index];
+            const name = person.name;
+            const gender = person.gender;
+            const birthYear = person.birth_year;
+			const hairColor = person.hair_color
+			const eyeColor = person.eye_color
+			const imageUrl = `../assets/people/${name.toLowerCase().replace(/ /g, '_')}.jpg`;
+
+
+        const content = `
+        <h2>${name}</h2>
+        <img src="${imageUrl}" alt="${name} Image" class="people-img">
+        <p><strong>Gender:</strong> ${gender}</p>
+        <p><strong>Birth Year:</strong> ${birthYear}</p>
+        <p><strong>Hair Color:</strong> ${hairColor}</p>
+        <p><strong>Eye Color:</strong> ${eyeColor}</p>
+        `;
+        box.innerHTML = content;
+    });
+};
+
+fetchPeople();
